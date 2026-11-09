@@ -1,0 +1,641 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tixly | Football Tickets</title>
+  <meta name="description" content="Tixly football ticket booking platform">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="announcement">
+  TIXLY MATCHDAY · FOOTBALL BRINGS US TOGETHER
+</div>
+
+<header class="site-header">
+  <a class="brand" href="#home">
+    <span class="brand-mark">T</span>
+    <span>TIXLY<span class="brand-dot">.</span></span>
+  </a>
+
+  <button class="menu-toggle" id="menuToggle">☰</button>
+
+  <nav id="mainNav" class="main-nav">
+    <a href="#home">Home</a>
+    <a href="#featured">Featured Match</a>
+    <a href="#premier-league">Premier League</a>
+    <a href="#uefa">UEFA</a>
+    <a href="#how-it-works">How It Works</a>
+  </nav>
+
+  <a class="header-cta" href="#matches">Find Tickets ↗</a>
+</header>
+
+<main>
+
+<!-- HOME PAGE -->
+
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+
+  <div class="hero-content">
+    <p class="eyebrow">● YOUR MATCHDAY STARTS HERE</p>
+
+    <h1>FEEL THE<br><span>GAME.</span></h1>
+
+    <p class="hero-copy">
+      Discover exciting football fixtures, choose your seat
+      and book your matchday experience with Tixly.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#matches" class="btn btn-primary">
+        Explore Matches →
+      </a>
+
+      <a href="#how-it-works" class="btn btn-ghost">
+        How Booking Works
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div>
+        <strong>34,000</strong>
+        <small>Demo slots listed</small>
+      </div>
+
+      <div>
+        <strong>2</strong>
+        <small>Ticket categories</small>
+      </div>
+
+      <div>
+        <strong>24/7</strong>
+        <small>Browse fixtures</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED MATCH -->
+
+<section class="section" id="featured">
+
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">THE SPOTLIGHT</p>
+      <h2>FEATURED <span>FIXTURE</span></h2>
+    </div>
+
+    <span class="section-tag">SAMPLE LISTING</span>
+  </div>
+
+  <article class="featured-card">
+
+    <img
+      src="assets/bayern-ajax-poster.png"
+      alt="Bayern Munich versus Ajax"
+      class="featured-poster"
+    >
+
+    <div class="featured-overlay">
+
+      <div class="match-kicker">
+        INTERNATIONAL FRIENDLY · SAMPLE EVENT
+      </div>
+
+      <div class="teams-line">
+        <span>BAYERN<br>MUNICH</span>
+        <b>VS</b>
+        <span>AJAX</span>
+      </div>
+
+      <div class="match-meta">
+        <span>◷ 5 January 2027</span>
+        <span>⌖ Venue to be confirmed</span>
+        <span>Kenya</span>
+      </div>
+
+      <div class="featured-bottom">
+        <div>
+          <small>REGULAR</small>
+          <strong>KES 1,200</strong>
+        </div>
+
+        <div>
+          <small>VIP</small>
+          <strong>KES 2,300</strong>
+        </div>
+
+        <a href="#booking"
+           class="btn btn-primary"
+           data-match="Bayern Munich vs Ajax">
+          Book Ticket →
+        </a>
+      </div>
+
+    </div>
+  </article>
+
+  <p class="notice">
+    This is a sample fixture. Confirm the official event,
+    venue and organizer before accepting real payments.
+  </p>
+
+</section>
+
+<!-- FOOTBALL MATCHES -->
+
+<section class="section" id="matches">
+
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">PICK YOUR NEXT MATCH</p>
+      <h2>UPCOMING <span>GAMES</span></h2>
+    </div>
+
+    <div class="filter-row">
+      <button class="filter-btn active" data-filter="all">
+        All Matches
+      </button>
+
+      <button class="filter-btn" data-filter="premier">
+        Premier League
+      </button>
+
+      <button class="filter-btn" data-filter="uefa">
+        UEFA
+      </button>
+    </div>
+  </div>
+
+  <div class="match-grid" id="matchGrid">
+
+    <article class="match-card" data-league="premier">
+      <div class="match-card-top">
+        <span>PREMIER LEAGUE</span>
+        <span class="sample-pill">DEMO</span>
+      </div>
+
+      <div class="club-row">
+        <div class="club">
+          <div class="club-badge red">ARS</div>
+          <b>Arsenal</b>
+        </div>
+
+        <span class="vs-small">VS</span>
+
+        <div class="club">
+          <div class="club-badge blue">CHE</div>
+          <b>Chelsea</b>
+        </div>
+      </div>
+
+      <div class="match-card-meta">
+        Date and venue to be confirmed
+      </div>
+
+      <div class="match-card-bottom">
+        <span>From <b>KES 1,200</b></span>
+        <button class="text-btn book-match"
+          data-match="Arsenal vs Chelsea">
+          View Tickets ↗
+        </button>
+      </div>
+    </article>
+
+    <article class="match-card" data-league="premier">
+      <div class="match-card-top">
+        <span>PREMIER LEAGUE</span>
+        <span class="sample-pill">DEMO</span>
+      </div>
+
+      <div class="club-row">
+        <div class="club">
+          <div class="club-badge red">LIV</div>
+          <b>Liverpool</b>
+        </div>
+
+        <span class="vs-small">VS</span>
+
+        <div class="club">
+          <div class="club-badge sky">MCI</div>
+          <b>Man City</b>
+        </div>
+      </div>
+
+      <div class="match-card-meta">
+        Date and venue to be confirmed
+      </div>
+
+      <div class="match-card-bottom">
+        <span>From <b>KES 1,200</b></span>
+        <button class="text-btn book-match"
+          data-match="Liverpool vs Manchester City">
+          View Tickets ↗
+        </button>
+      </div>
+    </article>
+
+    <article class="match-card" data-league="uefa">
+      <div class="match-card-top">
+        <span>UEFA COMPETITION</span>
+        <span class="sample-pill">DEMO</span>
+      </div>
+
+      <div class="club-row">
+        <div class="club">
+          <div class="club-badge white">RMA</div>
+          <b>Real Madrid</b>
+        </div>
+
+        <span class="vs-small">VS</span>
+
+        <div class="club">
+          <div class="club-badge red">BAY</div>
+          <b>Bayern</b>
+        </div>
+      </div>
+
+      <div class="match-card-meta">
+        Date and venue to be confirmed
+      </div>
+
+      <div class="match-card-bottom">
+        <span>From <b>KES 1,200</b></span>
+        <button class="text-btn book-match"
+          data-match="Real Madrid vs Bayern Munich">
+          View Tickets ↗
+        </button>
+      </div>
+    </article>
+
+    <article class="match-card" data-league="uefa">
+      <div class="match-card-top">
+        <span>UEFA COMPETITION</span>
+        <span class="sample-pill">DEMO</span>
+      </div>
+
+      <div class="club-row">
+        <div class="club">
+          <div class="club-badge red">BAR</div>
+          <b>Barcelona</b>
+        </div>
+
+        <span class="vs-small">VS</span>
+
+        <div class="club">
+          <div class="club-badge dark">PSG</div>
+          <b>Paris</b>
+        </div>
+      </div>
+
+      <div class="match-card-meta">
+        Date and venue to be confirmed
+      </div>
+
+      <div class="match-card-bottom">
+        <span>From <b>KES 1,200</b></span>
+        <button class="text-btn book-match"
+          data-match="Barcelona vs Paris Saint-Germain">
+          View Tickets ↗
+        </button>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- BOOKING PAGE -->
+
+<section class="section booking-section" id="booking">
+
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">RESERVE YOUR PLACE</p>
+      <h2>BOOK A <span>TICKET</span></h2>
+    </div>
+
+    <span class="slots-label">
+      ● 34,000 demo slots remaining
+    </span>
+  </div>
+
+  <div class="booking-layout">
+
+    <form id="bookingForm" class="booking-form">
+
+      <div class="form-heading">
+        <span class="step-number">01</span>
+        <div>
+          <h3>Your Details</h3>
+          <p>Enter the information for your sample ticket.</p>
+        </div>
+      </div>
+
+      <label for="fullName">Full Name</label>
+      <input
+        id="fullName"
+        name="fullName"
+        placeholder="Enter your full name"
+        required
+        minlength="3"
+      >
+
+      <div class="form-two">
+
+        <div>
+          <label for="email">Email Address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="phone">Phone / WhatsApp</label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            placeholder="07XX XXX XXX"
+            required
+          >
+        </div>
+
+      </div>
+
+      <label for="match">Select Match</label>
+
+      <select id="match" name="match" required>
+        <option value="Bayern Munich vs Ajax">
+          Bayern Munich vs Ajax (Sample)
+        </option>
+
+        <option>Arsenal vs Chelsea (Demo)</option>
+
+        <option>
+          Liverpool vs Manchester City (Demo)
+        </option>
+
+        <option>
+          Real Madrid vs Bayern Munich (Demo)
+        </option>
+
+        <option>
+          Barcelona vs Paris Saint-Germain (Demo)
+        </option>
+      </select>
+
+      <div class="form-two">
+
+        <div>
+          <label for="ticketType">Ticket Category</label>
+
+          <select id="ticketType" name="ticketType">
+            <option value="Regular">
+              Regular — KES 1,200
+            </option>
+
+            <option value="VIP">
+              VIP — KES 2,300
+            </option>
+          </select>
+        </div>
+
+        <div>
+          <label for="quantity">Quantity</label>
+
+          <select id="quantity" name="quantity">
+            <option value="1">1 Ticket</option>
+            <option value="2">2 Tickets</option>
+            <option value="3">3 Tickets</option>
+            <option value="4">4 Tickets</option>
+            <option value="5">5 Tickets</option>
+          </select>
+        </div>
+
+      </div>
+
+      <label for="paymentMethod">Payment Method</label>
+
+      <select id="paymentMethod" name="paymentMethod">
+        <option value="M-Pesa">M-Pesa</option>
+        <option value="PayPal">PayPal</option>
+      </select>
+
+      <div class="payment-info" id="paymentInfo">
+        <div class="payment-icon">M</div>
+
+        <div>
+          <b>M-Pesa Payment Instructions</b>
+
+          <p>
+            Payment number:
+            <strong>0181580414</strong>.
+            Confirm the recipient and payment instructions
+            with the organizer before paying.
+          </p>
+        </div>
+      </div>
+
+      <label for="paymentReference">
+        Payment Transaction Reference
+      </label>
+
+      <input
+        id="paymentReference"
+        name="paymentReference"
+        placeholder="Enter transaction code if already paid"
+      >
+
+      <label class="check-row">
+        <input type="checkbox" id="terms" required>
+
+        <span>
+          I understand this is a sample booking and that
+          payment must be independently verified.
+        </span>
+      </label>
+
+      <button class="btn btn-primary submit-btn" type="submit">
+        Submit Booking Details →
+      </button>
+
+      <p class="form-footnote">
+        Never enter your M-Pesa PIN or PayPal password here.
+      </p>
+
+    </form>
+
+    <!-- ORDER SUMMARY -->
+
+    <aside class="order-panel">
+
+      <div class="order-panel-head">
+        <span>YOUR ORDER</span>
+        <span class="secure-label">● DEMO MODE</span>
+      </div>
+
+      <div class="order-match">
+        <div class="mini-crest">T</div>
+
+        <div>
+          <b id="summaryMatch">Bayern Munich vs Ajax</b>
+          <small>Football Fixture · Sample Listing</small>
+        </div>
+      </div>
+
+      <div class="price-line">
+        <span id="summaryCategory">Regular Ticket × 1</span>
+        <b id="summaryPrice">KES 1,200</b>
+      </div>
+
+      <div class="price-line muted">
+        <span>Booking Fee</span>
+        <b>KES 0</b>
+      </div>
+
+      <div class="total-line">
+        <span>Estimated Total</span>
+        <strong id="summaryTotal">KES 1,200</strong>
+      </div>
+
+      <div class="ticket-preview">
+
+        <div class="ticket-preview-top">
+          <span>TIXLY</span>
+          <span>SAMPLE PASS</span>
+        </div>
+
+        <div class="ticket-preview-mid">
+          <strong id="previewMatch">
+            BAYERN VS AJAX
+          </strong>
+
+          <small>
+            5 JAN 2027 · KENYA · SAMPLE
+          </small>
+        </div>
+
+        <div class="ticket-preview-bottom">
+          <span>REGULAR / VIP</span>
+          <span>NOT VALID FOR ENTRY</span>
+        </div>
+
+      </div>
+
+      <p class="order-disclaimer">
+        This estimate is not proof of payment or admission.
+      </p>
+
+    </aside>
+
+  </div>
+
+  <!-- SUCCESS RECEIPT -->
+
+  <div class="success-panel" id="successPanel" hidden>
+
+    <div class="success-icon">✓</div>
+
+    <h3>Booking Details Submitted!</h3>
+
+    <p id="successMessage">
+      Your sample ticket receipt is ready.
+    </p>
+
+    <div id="ticketReceipt" class="receipt-card"></div>
+
+    <div class="receipt-actions">
+      <button class="btn btn-primary" id="printTicket">
+        Print / Save Ticket
+      </button>
+
+      <button class="btn btn-ghost" id="newBooking">
+        New Booking
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- HOW IT WORKS -->
+
+<section class="section how-section" id="how-it-works">
+
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">SIMPLE STEPS</p>
+      <h2>HOW IT <span>WORKS</span></h2>
+    </div>
+  </div>
+
+  <div class="steps-grid">
+
+    <article>
+      <span>01</span>
+      <div class="step-icon">⚽</div>
+      <h3>Choose a Fixture</h3>
+      <p>Browse football matches and select your preferred game.</p>
+    </article>
+
+    <article>
+      <span>02</span>
+      <div class="step-icon">✍</div>
+      <h3>Enter Your Details</h3>
+      <p>Provide your name, email and contact information.</p>
+    </article>
+
+    <article>
+      <span>03</span>
+      <div class="step-icon">▣</div>
+      <h3>Make Payment</h3>
+      <p>Follow verified organizer payment instructions.</p>
+    </article>
+
+    <article>
+      <span>04</span>
+      <div class="step-icon">✉</div>
+      <h3>Receive Receipt</h3>
+      <p>Receive your receipt after the email system is configured.</p>
+    </article>
+
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+  <a class="brand" href="#home">
+    <span class="brand-mark">T</span>
+    <span>TIXLY<span class="brand-dot">.</span></span>
+  </a>
+
+  <p>Football moments, made memorable.</p>
+
+  <small>
+    © <span id="year"></span> Tixly.
+    Demo website — not an official event ticketing partner.
+  </small>
+
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
